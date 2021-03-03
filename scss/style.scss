@@ -21,10 +21,6 @@ body {
 .main-header {
   padding: 1em;
   margin: 1em;
-
-  svg {
-    
-  }
 }
 
 .container {
@@ -81,11 +77,17 @@ body {
   
       input[type=email] {
         border-radius: 12px;
+        border: 1px solid $primary-color;
         padding: 1em;
         width: 100%;
         color: #e6d2d3;
         border-color: #e6d2d3;
         background-color: #fff6f5;
+        outline: none;
+      }
+
+      input.error {
+        border-color: red;
       }
   
       .submit-btn {
@@ -93,16 +95,28 @@ body {
         position: relative;
         bottom: 45px;
         left: 120px;
-        background-color: $primary-color;
-        border-radius: 12px;
+        // background-color: $primary-color;
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border-radius: 50px;
         border-color: $primary-color;
         width: 20%;
         height: 40px;
         padding: .7em 1em;
+        outline: none;
+      }
+
+      .error-message {
+        display: none;
+        color: red;
+
+        &.show {
+          display: block;
+        }
       }
     }
   }
 }
 
-
+@import 'tablet';
+@import 'desktop';
 

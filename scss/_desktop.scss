@@ -1,0 +1,48 @@
+@media only screen and (min-width: 1024px) {
+
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .hero-image {
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text-content {
+      background-image: url('/images/bg-pattern-desktop.svg');
+
+      .email-submit {
+
+
+
+        .submit-btn {
+          position: relative;
+          left: 230px;
+          padding-bottom: 2em;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .container {
+
+    .text-content {
+
+      .email-submit {
+
+        .submit-btn {
+          position: relative;
+          left: 350px;
+        }
+      }
+    }
+  }
+}

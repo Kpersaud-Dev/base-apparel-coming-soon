@@ -20,7 +20,12 @@
   <div class="container">
 
     <div class="hero-image">
-      <img src="images/hero-mobile.jpg" alt="Hero Image">
+      <img srcset="images/hero-mobile.jpg 250w,
+                   images/hero-desktop.jpg 800w"
+           sizes="max-width: 768px,
+                  1440px"
+           alt="Hero Image"
+      >
     </div>
 
     <div class="text-content">
@@ -33,12 +38,12 @@
       </p>
 
       <form class="email-submit">
-        <input type="email" placeholder="Email Address">
+        <input type="email" placeholder="Email Address" class="email-input">
         
           <button type="submit" class="submit-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20"><path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671"/></svg>
           </button>
-          
+          <div class="error-message">Please Submit a valid email</div>
         
       </form>
 
