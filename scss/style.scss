@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+$primary-color: hsl(0, 36%, 70%);
+$secondary-color: hsl(0, 93%, 68%);
+$neutral-color: hsl(0, 6%, 24%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-header {
+  padding: 1em;
+  margin: 1em;
+
+  svg {
+    
+  }
+}
+
+.hero-image {
+
+  img {
+    width: 100%;
+  }
+  
+}
+
+.text-content {
+  background-color: #fefaf9;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2em;
+  
+
+
+  .coming-soon {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding-top: 1em;
+    padding-bottom: .5em;
+  
+    .were {
+      font-weight: 300;
+      color: #dcc4c2;
+    }
+
+    span {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .description {
+    line-height: 30px;
+    margin: 0 2em;
+    padding-bottom: 2em;
+    color: #bda1a0;
+  }
+
+  .email-submit {
+    
+
+    input {
+      border-radius: 12px;
+      padding: 1em;
+      width: 100%;
+      color: #e7d5d5;
+      border-color: #e7d5d5;
+    }
+
+    .submit-btn {
+      background-color: $primary-color;
+      border-radius: 12px;
+      width: 33%;
+    }
+  }
+
+  
+
+}
+
