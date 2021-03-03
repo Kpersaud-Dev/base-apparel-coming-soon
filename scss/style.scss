@@ -3,6 +3,11 @@ $primary-color: hsl(0, 36%, 70%);
 $secondary-color: hsl(0, 93%, 68%);
 $neutral-color: hsl(0, 6%, 24%);
 
+::placeholder {
+  color: #e6d2d3;
+  opacity: 1; /* Firefox */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,69 +27,82 @@ body {
   }
 }
 
-.hero-image {
+.container {
+  background-color: #fff6f5;
 
-  img {
-    width: 100%;
-  }
-  
-}
+  .hero-image {
 
-.text-content {
-  background-color: #fefaf9;
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 2em;
-  
-
-
-  .coming-soon {
-    font-size: 3em;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    padding-top: 1em;
-    padding-bottom: .5em;
-  
-    .were {
-      font-weight: 300;
-      color: #dcc4c2;
-    }
-
-    span {
+    img {
       width: 100%;
-      display: block;
     }
-  }
-
-  .description {
-    line-height: 30px;
-    margin: 0 2em;
-    padding-bottom: 2em;
-    color: #bda1a0;
-  }
-
-  .email-submit {
     
-
-    input {
-      border-radius: 12px;
-      padding: 1em;
-      width: 100%;
-      color: #e7d5d5;
-      border-color: #e7d5d5;
+  }
+  
+  .text-content {
+    background-color: #fefaf9;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2em;
+    
+  
+  
+    .coming-soon {
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      padding-top: 1em;
+      padding-bottom: .5em;
+    
+      .were {
+        font-weight: 300;
+        color: #dcc4c2;
+      }
+  
+      span {
+        width: 100%;
+        display: block;
+      }
     }
-
-    .submit-btn {
-      background-color: $primary-color;
-      border-radius: 12px;
-      width: 33%;
+  
+    .description {
+      line-height: 30px;
+      margin: 0 2em;
+      padding-bottom: 2em;
+      color: #bda1a0;
+      font-size: .9em;
+    }
+  
+    .email-submit {
+      position: relative;
+      width: 80%;
+  
+      input[type=email] {
+        border-radius: 12px;
+        padding: 1em;
+        width: 100%;
+        color: #e6d2d3;
+        border-color: #e6d2d3;
+        background-color: #fff6f5;
+      }
+  
+      .submit-btn {
+        cursor: pointer;
+        position: relative;
+        bottom: 45px;
+        left: 120px;
+        background-color: $primary-color;
+        border-radius: 12px;
+        border-color: $primary-color;
+        width: 20%;
+        height: 40px;
+        padding: .7em 1em;
+      }
     }
   }
-
-  
-
 }
+
+
 
